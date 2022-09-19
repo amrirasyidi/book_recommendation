@@ -1,7 +1,12 @@
+# Book Recommendation Machine Learning Web App
+
 ## Goals
 By the end of this project, we will create a web app with the following features:
-1. "Similar book" feature
-1. "People also read" feature
+1. Book search feature
+1. "People also read" feature (collaborative filtering)
+1. "Similar book" feature (clustering)
+    1. Similarity by rating
+    1. Similarity by content(?) (fiction with fiction etc)
 
 ## Steps
 This project will go through
@@ -24,10 +29,10 @@ This project will go through
     1. Dockers
     
 ## Tools
-**TBD**
 
 ## Sources
 1. [Krish Naik's End To End Machine Learning Project Implementation With Dockers,Github Actions And Deployment](https://www.youtube.com/watch?v=MJ1vWb1rGwM)
+1. [Dataquest's Build A Book Recommendation System With Machine Learning](https://www.youtube.com/watch?v=x-alwfgQ-cY)
 1. Kaggle
     1. [[Data]Book Recommendation Dataset](https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset?datasetId=1004280)
     1. [[Notebook]Book_Item-Based Collaborative Filtering](https://www.kaggle.com/code/sebnemgurek/book-item-based-collaborative-filtering)
