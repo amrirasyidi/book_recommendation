@@ -1,9 +1,9 @@
-# Book Recommendation Machine Learning Web App
+# [WIP]Book Recommendation Machine Learning Web App
 
 ## Goals
 By the end of this project, we will create a web app with the following features:
 1. Book search feature
-1. "People also read" feature (collaborative filtering)
+1. "People also like" feature (collaborative filtering)
 1. "Similar book" feature (clustering)
     1. Similarity by rating
     1. Similarity by content(?) (fiction with fiction etc)
@@ -11,7 +11,7 @@ By the end of this project, we will create a web app with the following features
 ## Steps
 This project will go through
 1. Preparing the GitHub repository
-1. Data preparation
+1. Data preparation <-- 🔥 **Currently in this stage** 🔥
     1. Data Cleaning
     1. Exploratory Data Analysis (EDA)
     1. Feature engineering
