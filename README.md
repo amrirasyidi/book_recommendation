@@ -1,5 +1,14 @@
 # [WIP]Book Recommendation Machine Learning Web App
 
+## Author's Note
+What I've learn from this project
+1. VS code
+1. Git
+1. Collaborative filtering
+    1. Making the content-user matrix
+    1. Calculate similarity using cosine similarity
+1. Create a "search engine" using TfidfVectorizer
+---
 ## Goals
 By the end of this project, we will create a web app with the following features:
 1. Book search feature
@@ -15,10 +24,10 @@ This project will go through
     1. Data Cleaning
     1. Exploratory Data Analysis (EDA)
     1. Feature engineering
-    1. Feature selection
+    1. ~~Feature selection~~
 1. Creating the model <-- 🔥 **Currently in this stage** 🔥
     1. Model training
-    1. Model assessment
+    1. ~~Model assessment~~
     1. Model serialization (to make the model reusable in the web app)
 1. Setting up the web app
     1. Flask
@@ -30,9 +39,11 @@ This project will go through
     
 ## Tools
 
+---
 ## Sources
 1. [Krish Naik's End To End Machine Learning Project Implementation With Dockers,Github Actions And Deployment](https://www.youtube.com/watch?v=MJ1vWb1rGwM)
 1. [Dataquest's Build A Book Recommendation System With Machine Learning](https://www.youtube.com/watch?v=x-alwfgQ-cY)
+1. [CampusX-Official Book Recommender System](https://github.com/campusx-official/book-recommender-system)
 1. Kaggle
     1. [[Data]Book Recommendation Dataset](https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset?datasetId=1004280)
     1. [[Notebook]Book_Item-Based Collaborative Filtering](https://www.kaggle.com/code/sebnemgurek/book-item-based-collaborative-filtering)
