@@ -3,9 +3,9 @@ from flask import Flask, request, app, jsonify, url_for, render_template
 import numpy as np
 import pandas as pd
 
-search_result = pickle.load(open('search_result.pkl', 'rb'))
-search_define = pickle.load(open('search_define.pkl', 'rb'))
-search_fit_transform = pickle.load(open('search_fit_transform.pkl', 'rb'))
+search_result = pickle.load(open('pickles/search_result.pkl', 'rb'))
+search_define = pickle.load(open('pickles/search_define.pkl', 'rb'))
+search_fit_transform = pickle.load(open('pickles/search_fit_transform.pkl', 'rb'))
 
 # the starting point from where the app will run
 app=Flask(__name__)
