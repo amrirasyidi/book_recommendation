@@ -11,12 +11,12 @@ By the end of this project, we will create a web app with the following features
 ## Steps
 This project will go through
 1. Preparing the GitHub repository
-1. Data preparation <-- 🔥 **Currently in this stage** 🔥
+1. Data preparation
     1. Data Cleaning
     1. Exploratory Data Analysis (EDA)
     1. Feature engineering
     1. Feature selection
-1. Creating the model
+1. Creating the model <-- 🔥 **Currently in this stage** 🔥
     1. Model training
     1. Model assessment
     1. Model serialization (to make the model reusable in the web app)
