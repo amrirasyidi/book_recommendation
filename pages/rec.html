@@ -124,50 +124,19 @@
         </div>
     </nav>
 
-    <center><h1>Find what others also like to read!</h1></center>
+    <center><h1>We recommend you to read...</h1></center>
     
-    <center>
-        <p>
-            This web app will find for a book recommendation based on what people also like and read
-        </p>
-    </center>
-    <center>
-        <p>
-            Step 1. Enter your book title
-        </p>
-    </center>
-    
-    <!-- Main Input For Receiving Query to our ML -->
-    <center>
-    <form action="{{ url_for('search')}}" method="post">
-        <input type="text" name="book_search" id="book_search" autocomplete="off" placeholder="Type in the book title" style="padding: 15px; font-size: x-large; background-color: #ffffff; border-color:#000000; width: 40%; height: 48; color: #181818" />
-        <br>
-        <br>
-        <button type="submit" class="button btn-primary btn-block btn-large"><strong>Find</strong></button>
-    </center>
-
-    <center>
-        <p>
-            Step 2. Click the "Recommendation" button
-        </p>
-    </center>
+    <!-- Main Input For Receiving Query to our ML --> 
 
     <center>
         <div class="row">
-        {% for i in book_search %}
+        {% for i in book_rec %}
             <div class="column">
                 <div class="card">
-                    <img src="{{book_search[i]['image_url_s']}}" class="card-img-top">
-                    <!-- <p style="color: #000000;">ISBN index: {{book_search[i]['isbn_index']}}</p> -->
-                    <h2 style="color: #000000;">{{book_search[i]['book_title']}}</h2>
-                    <p style="color: #000000;">{{book_search[i]['book_author']}}</p>
-                    <p style="color: #000000;">{{book_search[i]['year_of_publication']}}</p>
-                    <!-- <p style="color: #000000;">{{i}}</p> -->
-                    <form action="{{ url_for('rec')}}" method="post">
-                        <button type="submit" class="button btn-primary btn-block btn-large" name="sim_input" value="{{book_search[i]['isbn_index']}}">
-                            <strong>Recommendation</strong>
-                        </button>
-                    </form>
+                    <img src="{{book_rec[i]['image_url_s']}}" class="card-img-top">
+                    <h2 style="color: #000000;">{{book_rec[i]['book_title']}}</h2>
+                    <p style="color: #000000;">{{book_rec[i]['book_author']}}</p>
+                    <p style="color: #000000;">{{book_rec[i]['year_of_publication']}}</p>
                 </div>
             </div>
         {% endfor %}
@@ -175,11 +144,9 @@
 
     <center>
         <p>
-            Step 3. Get your recommendation!
+            Click home on top right to search again
         </p>
     </center>
-
-    
     
 </body>
 </html>
