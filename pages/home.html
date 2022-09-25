@@ -157,12 +157,11 @@
         {% for i in book_search %}
             <div class="column">
                 <div class="card">
-                    <img src="{{book_search[i]['image_url_s']}}" class="card-img-top">
-                    <!-- <p style="color: #000000;">ISBN index: {{book_search[i]['isbn_index']}}</p> -->
+                    <img src="{{book_search[i]['image_url_m']}}" class="card-img-top">
                     <h2 style="color: #000000;">{{book_search[i]['book_title']}}</h2>
                     <p style="color: #000000;">{{book_search[i]['book_author']}}</p>
                     <p style="color: #000000;">{{book_search[i]['year_of_publication']}}</p>
-                    <!-- <p style="color: #000000;">{{i}}</p> -->
+                    <!-- <p style="color: #000000;">{{book_search[i]['isbn_index']}}</p> -->
                     <form action="{{ url_for('rec')}}" method="post">
                         <button type="submit" class="button btn-primary btn-block btn-large" name="sim_input" value="{{book_search[i]['isbn_index']}}">
                             <strong>Recommendation</strong>
@@ -170,6 +169,12 @@
                     </form>
                 </div>
             </div>
+        {% endfor %}
+    </center>
+
+    <center>
+        {% for i in book_search %}
+            <p style="color: #ffffff;">{{book_search[i]}}</p>
         {% endfor %}
     </center>
 
