@@ -1,6 +1,5 @@
 dill
 Flask
-re
 numpy
 pandas
 sklearn
