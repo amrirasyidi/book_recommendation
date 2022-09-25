@@ -17,6 +17,18 @@ By the end of this project, we will create a web app with the following features
     1. Similarity by rating
     1. Similarity by content(?) (fiction with fiction etc)
 
+## Result
+I still have a trouble deploying the site and make it accessible publicly, but the local looks like this.
+### Homepage
+<p align="center">
+<img src="pictures/homepage.JPG">
+</p>
+<br>
+### Recommendation Page
+<p align="center">
+<img src="pictures/rec_page.JPG">
+</p>
+
 ## Steps
 This project will go through
 1. Preparing the GitHub repository
@@ -25,15 +37,15 @@ This project will go through
     1. Exploratory Data Analysis (EDA)
     1. Feature engineering
     1. ~~Feature selection~~
-1. Creating the model <-- 🔥 **Currently in this stage** 🔥
+1. Creating the model 
     1. Model training
     1. ~~Model assessment~~
     1. Model serialization (to make the model reusable in the web app)
-1. Setting up the web app
+1. Setting up the web app 
     1. Flask
     1. Streamlit
     1. Running and testing the web app (postman)
-1. Web app deployment
+1. Web app deployment <-- 🔥 **Currently in this stage** 🔥
     1. Heroku
     1. Dockers
     
