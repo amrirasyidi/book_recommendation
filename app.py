@@ -1,7 +1,7 @@
 import dill as pickle
 from flask import Flask, json, request, app, jsonify, url_for, render_template
 
-import re
+# import re
 
 import numpy as np
 import pandas as pd
